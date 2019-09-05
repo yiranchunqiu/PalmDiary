@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.pxz.myapp"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // 处理as3.0黄油刀问题
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //发行版签名文件配置[PS:签名文件须配置正确]
+    signingConfigs {
+        debug {
+            //别名
+            keyAlias 'key0'
+            //密码
+            keyPassword 'yhdpxz'
+            //路径
+            storeFile file('zhangshangriji.jks')
+            //密码
+            storePassword 'yhdpxz'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // V7包
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    // md风格
+    implementation "com.android.support:design:27.1.1"
+    // recyclerview
+    implementation "com.android.support:recyclerview-v7:27.1.1"
+    // 图片框架
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    // 注解框架黄油刀
+    implementation 'com.jakewharton:butterknife:7.0.0'
+    // 异步框架
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    //网络框架
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    //请求参数打印框架
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    // 解析框架
+    implementation 'com.google.code.gson:gson:2.8.2'
+    // 检测内存泄漏
+    implementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    // 沉浸状态栏
+    implementation 'com.jaeger.statusbaruitl:library:1.3.5'
+    // 悬浮按钮
+    implementation 'cc.trity.floatingactionbutton:library:1.0.0'
+    // 心形动画
+    implementation 'tyrant:heartlayout:1.0.1'
+    //刷新框架
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.pxz.myapp.view.FixedViewPager
+            android:id="@+id/vp_constellation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <tyrantgit.widget.HeartLayout
+            android:id="@+id/heart_layout"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>
