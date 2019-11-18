@@ -3,19 +3,19 @@
 
 ### 项目使用
 ***
-  项目主要是一个毕业设计项目。
-  使用了glide3.x实现图片加载。
-  使用了butterknife7.x实现注解。
-  使用了rxjava1.x+retrofit2.x+okhttp3.x实现了网络请求。
-  使用了gson实现json解析。
-  使用了leakcanary检测内存泄漏。
-  使用了statusbaruitl实现沉浸状态栏。
-  使用了floatingactionbutton实现悬浮按钮。
-  使用了heartlayout实现心性动画。
-  使用了smartrefreshlayout实现了下拉刷新上拉加载
-  天气接口api使用了小米开放接口。
-  星座数据使用本地json数据。
-  日记保存数据使用sqlite保存本地。
+  1.项目主要是一个毕业设计项目。
+  2.使用了glide3.x实现图片加载。
+  3.使用了butterknife7.x实现注解。
+  4.使用了rxjava1.x+retrofit2.x+okhttp3.x实现了网络请求。
+  5.使用了gson实现json解析。
+  6.使用了leakcanary检测内存泄漏。
+  7.使用了statusbaruitl实现沉浸状态栏。
+  8.使用了floatingactionbutton实现悬浮按钮。
+  9.使用了heartlayout实现心性动画。
+  10.使用了smartrefreshlayout实现了下拉刷新上拉加载
+  11.天气接口api使用了小米开放接口。
+  12.星座数据使用本地json数据。
+  13.日记保存数据使用sqlite保存本地。
 ***
 
 ### 图片预览
