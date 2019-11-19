@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.pxz.zhangshangriji">
+    package="com.pxz.palmdiary">
 
     <!-- ******************************* 权限相关 ******************************* -->
     <!-- 通用权限 -->

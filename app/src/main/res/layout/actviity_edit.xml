@@ -53,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
-            <com.pxz.zhangshangriji.view.LinedEditText
+            <com.pxz.palmdiary.view.LinedEditText
                 android:id="@+id/update_diary_et_content"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"

@@ -2,12 +2,11 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.pxz.zhangshangriji"
+        applicationId "com.pxz.palmdiary"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         // 处理as3.0黄油刀问题
         javaCompileOptions {
             annotationProcessorOptions {
@@ -24,7 +23,7 @@ android {
             //密码
             keyPassword '123456'
             //路径
-            storeFile file('zhangshangriji.jks')
+            storeFile file('palmdiary.jks')
             //密码
             storePassword '123456'
         }
@@ -34,7 +33,7 @@ android {
             //密码
             keyPassword '123456'
             //路径
-            storeFile file('zhangshangriji.jks')
+            storeFile file('palmdiary.jks')
             //密码
             storePassword '123456'
         }
