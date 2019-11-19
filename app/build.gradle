@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.pxz.myapp"
+        applicationId "com.pxz.zhangshangriji"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
@@ -15,23 +15,40 @@ android {
             }
         }
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
+    
     //发行版签名文件配置[PS:签名文件须配置正确]
     signingConfigs {
-        debug {
+        release {
             //别名
-            keyAlias 'key0'
+            keyAlias 'pxz'
             //密码
-            keyPassword 'yhdpxz'
+            keyPassword '123456'
             //路径
             storeFile file('zhangshangriji.jks')
             //密码
-            storePassword 'yhdpxz'
+            storePassword '123456'
+        }
+        debug {
+            //别名
+            keyAlias 'pxz'
+            //密码
+            keyPassword '123456'
+            //路径
+            storeFile file('zhangshangriji.jks')
+            //密码
+            storePassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
         }
     }
 }

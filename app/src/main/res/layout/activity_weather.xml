@@ -93,7 +93,7 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.pxz.myapp.view.SemicircleProgressView
+                    <com.pxz.zhangshangriji.view.SemicircleProgressView
                         android:id="@+id/progress0"
                         android:layout_width="160dp"
                         android:layout_height="160dp"
@@ -268,7 +268,7 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.pxz.myapp.view.SemicircleProgressView
+                    <com.pxz.zhangshangriji.view.SemicircleProgressView
                         android:id="@+id/progress1"
                         android:layout_width="160dp"
                         android:layout_height="160dp"
